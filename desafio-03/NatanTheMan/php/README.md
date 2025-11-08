@@ -16,9 +16,15 @@ php index.php <start> <end>
 `start` - inteiro positivo\
 `end`   - inteiro positivo
 
-A ordem dos argumentos não importa, o programa saberá lidar com isso 
+A ordem dos argumentos não importa, o programa saberá lidar com isso.
 
-Número máximo unsigned int de 64bits
+Número máximo unsigned int de 64bits.
+
+## Rodar testes
+
+```
+./vendor/bin/phpunit tests --testdox
+```
 
 ---
 
