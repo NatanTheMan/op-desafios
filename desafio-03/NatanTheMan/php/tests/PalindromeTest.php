@@ -25,7 +25,9 @@ final class PalindromeTest extends TestCase
     public function testNumbersWithOneDigit()
     {
         $result = (new Palindrome("1", "10"))->getPalindromes();
-        $this->assertEquals(["1", "2", "3", "4", "5", "6", "7", "8", "9"], $result);
+        $this->assertEquals(
+            ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+            $result);
     }
 
     public function testInputsWereConvertedToInt()
@@ -71,7 +73,9 @@ final class PalindromeTest extends TestCase
         $palindrome = new Palindrome("1", "20");
         $result = $palindrome->getPalindromes();
 
-        $this->assertEquals(["1", "2", "3", "4", "5", "6", "7", "8", "9", "11"], $result);
+        $this->assertEquals(
+            ["1", "2", "3", "4", "5", "6", "7", "8", "9", "11"],
+            $result);
     }
 
     public function testThrowIfOneArgWasNull()

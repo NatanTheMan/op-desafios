@@ -1,9 +1,9 @@
+#!/usr/bin/env php
 <?php
 
 require __DIR__ . "/vendor/autoload.php";
 
 use App\Palindrome;
-
 
 try {
     $palindrome = new Palindrome($argv[1] ?? null, $argv[2] ?? null);

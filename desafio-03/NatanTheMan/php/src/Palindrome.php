@@ -19,24 +19,24 @@ class Palindrome
 
     private function validate($num1, $num2)
     {
-        if (is_null($num1) || is_null($num2)) {
-            throw new InvalidArgumentException("Informe os parâmetros necessários");
-        }
-        if (!is_numeric($num1) || !is_numeric($num2)) {
-            throw new InvalidArgumentException("Parâmetros devem ser números inteiros");
-        }
-        if (intval($num1) <= 0 || intval($num2) <= 0) {
-            throw new InvalidArgumentException("Parâmetros devem ser maiores que 0");
-        }
+        $msgError = "";
+        if (is_null($num1) || is_null($num2))
+            $msgError = "Informe os parâmetros necessários";
+        else if (!is_numeric($num1) || !is_numeric($num2))
+            $msgError = "Parâmetros devem ser números inteiros";
+        else if (intval($num1) <= 0 || intval($num2) <= 0)
+            $msgError = "Parâmetros devem ser maiores que 0";
+
+	if (!empty($msgError))
+            throw new InvalidArgumentException();
     }
 
     public function getPalindromes(): array
     {
         $palindromes = [];
         for ($i = $this->start; $i <= $this->end; $i++) {
-            if (strval($i) == strrev(strval($i))) {
+            if (strlen($i) == 1 || strval($i) == strrev(strval($i)))
                 array_push($palindromes, strval($i));
-            }
         }
         return $palindromes;
     }
