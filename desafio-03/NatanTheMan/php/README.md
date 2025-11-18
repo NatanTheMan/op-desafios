@@ -9,7 +9,7 @@ Ler dois números inteiros e retornar os palíndromos que existem no intervalos 
 
 ## Requisitos
 
-O programa foi escrito em PHP, versão 8.4.13. Para instrucoes de como instalar o PHP em seu OS consulte: [PHP: Downloads & Installation Instructions](https://www.php.net/downloads.php{target=_blank})
+O programa foi escrito em PHP, versão 8.4.13. Para instrucoes de como instalar o PHP em seu OS consulte: [PHP: Downloads & Installation Instructions](https://www.php.net/downloads.php)
 
 PHPUnit versao 10.5.58. Instale-o com:
 ```
