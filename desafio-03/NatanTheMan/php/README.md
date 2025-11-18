@@ -7,25 +7,36 @@ No caso deste desafio: "2", "7007", "111", "919", etc.
 
 Ler dois números inteiros e retornar os palíndromos que existem no intervalos entre eles.
 
+## Requisitos
+
+O programa foi escrito em PHP, versão 8.4.13.
+
+Certifique-se de que os arquivos `index.php` e `phpunit.phar` tem permissao para serem executados.
+
+Caso nao possuam permissao, conceda com este comando:
+```
+chmod +x index.php phpunit.phar
+```
+
 ## Como rodar
+
+A ordem dos argumentos não importa, o programa saberá lidar com isso. Ele sempre utilizara o menor valor fornecido como inicio e o maior como fim.
 
 ```
 php index.php <start> <end>
 ```
+ou
+```
+./index.php <start> <end>
+```
 
 `start` - inteiro positivo\
 `end`   - inteiro positivo
-
-A ordem dos argumentos não importa, o programa saberá lidar com isso.
 
 Número máximo unsigned int de 64bits.
 
 ## Rodar testes
 
 ```
-./vendor/bin/phpunit tests --testdox
+./phpunit.phar tests --testdox
 ```
-
----
-
-O programa foi escrito em PHP, versão 8.4.13.
